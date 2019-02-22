@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Item from "./Item";
 
 class Intro extends Component {
   //state = { type: this.props.type, class: this.props.class ***REMOVED***
@@ -9,7 +10,7 @@ class Intro extends Component {
   ***REMOVED***
 
   render() {
-    return <div className="title">THIS IN INTRO</div>;
+    return <Item type="Intro" class="HeaderItem" />;
   }
 }
 

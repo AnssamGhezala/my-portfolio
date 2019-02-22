@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
+import Item from "./Item";
 
 class Projects extends Component {
   render() {
-    return <div>Projects</div>;
+    return <Item type="Projects" class="HeaderItem" />;
   }
 }
 
