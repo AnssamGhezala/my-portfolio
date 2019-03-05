@@ -12,7 +12,7 @@ class Item extends Component {
   render() {
     return (
       <div
-        className={this.state.class}
+        className={"cl-effect-10" + this.state.class}
         onMouseOver={() => this.props.onHover(this.state.type)}
         onClick={this.handleClick}
       >
