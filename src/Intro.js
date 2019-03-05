@@ -14,8 +14,8 @@ class Intro extends Component {
         <div className="image">image</div>
         <div className="description">
           {" "}
-          Hi! I'am Anssam, a Software Engineering student at McGill University
-          :) I like building small things with JavaScript and React and am
+          Hi! I'm Anssam, a Software Engineering student at McGill University :)
+          I like building small things with JavaScript and React and am
           exploring the web dev world!{" "}
         </div>
       </div>

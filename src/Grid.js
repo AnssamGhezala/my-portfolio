@@ -9,7 +9,17 @@ class Grid extends Component {
 
   render() {
     return (
-      <div>{"Intro" === this.props.section ? <Intro /> : <div> bye </div>}</div>
+      <div>
+        {"Intro" === this.props.section ? (
+          <Intro />
+        ) : "About" === this.props.section ? (
+          <About />
+        ) : "Projects" === this.props.section ? (
+          <Projects />
+        ) : (
+          <div> </div>
+        )}
+      </div>
     );
   }
 }

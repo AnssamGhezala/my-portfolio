@@ -4,7 +4,12 @@ import Item from "./Item";
 
 class Projects extends Component {
   render() {
-    return <Item type="Projects" class="HeaderItem" />;
+    return (
+      <div className="Projects">
+        {" "}
+        <div className="project"> Project1 </div>
+      </div>
+    );
   }
 }
 
