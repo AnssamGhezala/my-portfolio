@@ -7,7 +7,34 @@ class Projects extends Component {
     return (
       <div className="Projects">
         {" "}
-        <div className="project"> Project1 </div>
+        <div className="project">
+          {" "}
+          <div className="title"> Stopwatch </div>{" "}
+          <div className="ProjectDescription"> Simple React stopwatch :)</div>{" "}
+        </div>
+        <div className="project">
+          {" "}
+          <div className="title"> RestoApp </div>{" "}
+          <div className="ProjectDescription">
+            {" "}
+            Java Restoration app using MVC model
+          </div>{" "}
+        </div>
+        <div className="project">
+          {" "}
+          <div className="title"> Search Bar </div>{" "}
+          <div className="ProjectDescription">
+            {" "}
+            Simple React search bar supporting txt files :)
+          </div>{" "}
+        </div>
+        <div className="project">
+          <div className="title"> Todo list</div>{" "}
+          <div className="ProjectDescription">
+            {" "}
+            Simple todo list using vanilla JS :)
+          </div>
+        </div>
       </div>
     );
   }
