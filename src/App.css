@@ -19,6 +19,24 @@
 padding-bottom: 10px;
 }
 
-.description{
-  
+.Intro{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  width: 100vw;
+  padding:200px;
 }
+.image{
+  border-style: solid;
+  width:350px;
+  height:200px;
+  margin:10px;
+}
+.description{
+  font-family:Helvetica,Arial,sans-serif;
+  font-weight:100;
+  font-size:20px;
+  width:350px;
+  margin:10px;
+}
+/* 0.56740941 */

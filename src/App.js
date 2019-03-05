@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Item from "./Item";
-import Intro from "./Intro.js";
-import About from "./About.js";
-import Projects from "./Projects.js";
+import Grid from "./Grid";
 
 class App extends Component {
   state = { hoverType: "" ***REMOVED***
@@ -24,7 +22,7 @@ class App extends Component {
           <About />
           <Projects /> */}
         </header>
-        <div> {this.state.hoverType} </div>
+        <Grid section={this.state.hoverType} />
       </div>
     );
   }
