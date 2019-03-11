@@ -7,7 +7,6 @@ class App extends Component {
   state = { hoverType: "" ***REMOVED***
 
   handleHover = name => {
-    console.log("name is " + name);
     this.setState({ hoverType: name });
   ***REMOVED***
   render() {
@@ -17,7 +16,11 @@ class App extends Component {
           <Item type="Intro" class="HeaderItem" onHover={this.handleHover} />
           <Item type="About" class="HeaderItem" onHover={this.handleHover} />
           <Item type="Projects" class="HeaderItem" onHover={this.handleHover} />
-          <Item type="Blabla" class="HeaderItem" onHover={this.handleHover} />
+          <Item
+            type="Contact me"
+            class="HeaderItem"
+            onHover={() => this.handleHover("Blabla")}
+          />
         </header>
         <Grid section={this.state.hoverType} />
       </div>

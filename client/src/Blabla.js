@@ -47,6 +47,8 @@ class Blabla extends Component {
           <div className="form-group">
             <input
               type="text"
+              pattern=".{1,}"
+              title="At least one character"
               className="form-control"
               value={this.state.name}
               onChange={e =>
@@ -67,7 +69,9 @@ class Blabla extends Component {
             <input
               type="email"
               className="form-control"
-              value={this.state.value}
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="characters@characters.domain"
+              value={this.state.email}
               onChange={e =>
                 this.setState({
                   email: e.target.value
@@ -85,7 +89,7 @@ class Blabla extends Component {
           <div className="form-group">
             <textarea
               className="form-control"
-              value={this.state.value}
+              value={this.state.message}
               onChange={e =>
                 this.setState({
                   message: e.target.value
@@ -99,7 +103,7 @@ class Blabla extends Component {
 
           <button
             id="contact-send"
-            type="Submit"
+            type="submit"
             className="btn btn-primary btn-lg btn-block"
           >
             Send

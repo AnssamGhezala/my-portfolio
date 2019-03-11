@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import "./App.css";
 
@@ -11,12 +12,19 @@ class Intro extends Component {
   render() {
     return (
       <div className="Intro">
-        <div className="image">image</div>
+        <img
+          alt="intro"
+          src="https://tce-live2.s3.amazonaws.com/media/media/2b7f1364-6c18-4b8d-a208-0aac26b4f5fe.jpg"
+        />{" "}
         <div className="description">
           {" "}
-          Hi! I'm Anssam, a Software Engineering student at McGill University :)
-          I like building small things with JavaScript and React and am
-          exploring the web dev world!{" "}
+          Hi! I'm <a className="underline--magical">Anssam</a>, a Software
+          Engineering student at{" "}
+          <a className="underline--magical">McGill University</a> :) I like
+          building small things with{" "}
+          <a className="underline--magical">JavaScript</a> and{" "}
+          <a className="underline--magical">React</a> and am exploring the web
+          dev world!{" "}
         </div>
       </div>
     );

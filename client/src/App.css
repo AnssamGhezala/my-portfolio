@@ -6,6 +6,113 @@
   overflow: hidden;
 
 }
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
+
+svg {
+  max-width: 600px;
+  width: 90%;
+  max-height: 95vh;
+  color: #ffabb2;
+  margin-left: 100px;
+}
+.monospace {
+  fill: #1d1d1d;
+}
+.hello {
+  animation: hello 6s ease forwards;
+  stroke-dasharray: 0 7000;
+  stroke-dashoffset: 10;
+  stroke: currentColor;
+  opacity: 1;
+}
+.cursor {
+  stroke: #e65c67;
+  stroke-width: 64px;
+  animation: cursor 12s ease forwards;
+  stroke-dasharray: 0 7000;
+  stroke-dashoffset: 30;
+}
+@-moz-keyframes hello {
+  0%, 20% {
+    stroke-dasharray: 0 7000;
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dasharray: 7000 0;
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes hello {
+  0%, 20% {
+    stroke-dasharray: 0 7000;
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dasharray: 7000 0;
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes hello {
+  0%, 20% {
+    stroke-dasharray: 0 7000;
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dasharray: 7000 0;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes hello {
+  0%, 20% {
+    stroke-dasharray: 0 7000;
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dasharray: 7000 0;
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes cursor {
+  0%, 20% {
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dashoffset: -6990;
+  }
+}
+@-webkit-keyframes cursor {
+  0%, 20% {
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dashoffset: -6990;
+  }
+}
+@-o-keyframes cursor {
+  0%, 20% {
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dashoffset: -6990;
+  }
+}
+@keyframes cursor {
+  0%, 20% {
+    stroke-dashoffset: 10;
+  }
+  60%, 100% {
+    stroke-dashoffset: -6990;
+  }
+}
 
 .Header {
   display: flex;
@@ -19,10 +126,9 @@
 
 .HeaderItem{
 padding-bottom: 10px;
+margin-left:4px;
 }
-.item {
-  margin-left:4px;
-}
+
 .Intro{
   display:flex;
   flex-direction: column;
@@ -30,10 +136,10 @@ padding-bottom: 10px;
   width: 100vw;
   padding:200px;
 }
-.image{
-  border-style: solid;
-  width:350px;
-  height:200px;
+/* ratio 684 * 322.64 */
+img {
+  width:684px;
+  height:322.64px;
   margin:10px;
 }
 .description{
@@ -41,7 +147,7 @@ padding-bottom: 10px;
   font-weight:100;
   font-size:20px;
   line-height:1.7em;
-  width:350px;
+  width:684px;
   margin:10px;
 }
 
@@ -103,6 +209,7 @@ font-size:15px;
 .contactForm {
   width: 500px;
   padding: 50px;
+  margin-left:100px
 }
 
 .form {
@@ -178,7 +285,7 @@ h3 {
 
 input, textarea {
   transition: all 800ms;
-  font-family: "Roboto";
+  font-family: "Helvetica,Arial,sans-serif";
   resize: none;  /* removes the resize handle */
   overflow: auto; /* removes default scrolling bars in IE */
   outline:none; 
