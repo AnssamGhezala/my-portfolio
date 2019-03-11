@@ -4,17 +4,17 @@ import "./App.css";
 class Projects extends Component {
   handleClick = thing => {
     if (thing === "Stopwatch") {
-      console.log(thing);
       window.open("https://github.com/AnssamGhezala/stopwatch");
     } else if (thing === "Todo") {
-      console.log(thing);
       window.open("https://github.com/AnssamGhezala/todo-list");
     } else if (thing === "Search") {
-      console.log(thing);
       window.open("https://github.com/AnssamGhezala/searchBar");
     } else if (thing === "Resto") {
-      console.log(thing);
       window.open("https://github.com/W2018-ECSE223/Group01");
+    } else if (thing === "Robot") {
+      window.open("https://github.com/AnssamGhezala/RoboElectronics");
+    } else if (thing === "Portfolio") {
+      window.open("https://github.com/AnssamGhezala/my-portfolio");
     }
   ***REMOVED***
   render() {
@@ -34,6 +34,14 @@ class Projects extends Component {
             Java Restoration app using MVC model
           </div>{" "}
         </div>
+        <div className="project" onClick={() => this.handleClick("Portfolio")}>
+          {" "}
+          <div className="title">Portfolio </div>{" "}
+          <div className="ProjectDescription">
+            {" "}
+            This is my porfolio using React, Express, nodemailer and Gmail's Api
+          </div>{" "}
+        </div>
         <div className="project" onClick={() => this.handleClick("Search")}>
           {" "}
           <div className="title"> Search Bar </div>{" "}
@@ -47,6 +55,13 @@ class Projects extends Component {
           <div className="ProjectDescription">
             {" "}
             Simple todo list using vanilla JS :)
+          </div>
+        </div>
+        <div className="project" onClick={() => this.handleClick("Robot")}>
+          <div className="title"> STMBot </div>{" "}
+          <div className="ProjectDescription">
+            {" "}
+            Soccer playing robot using python + raspberry pi @RoboElectronics
           </div>
         </div>
       </div>
