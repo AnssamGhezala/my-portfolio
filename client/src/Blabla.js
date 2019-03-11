@@ -95,7 +95,7 @@ class Blabla extends Component {
                   message: e.target.value
                 })
               }
-              placeholder="Message"
+              placeholder="Message... How was your experience going through my portfolio? Do you have any suggestions to improve it?"
               id="contact-message"
               rows="1"
             />
