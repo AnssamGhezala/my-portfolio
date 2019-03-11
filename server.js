@@ -27,11 +27,10 @@ app.post("/api/world", (req, res) => {
       );
       res.redirect("/#error");
     });
-
   res.send(
     `Thank you ${
       req.body.name
-    } ! The email was sent successfully and I will respond shortly ! :) `
+    }! The email was sent successfully and I will respond shortly! :) `
   );
 });
 

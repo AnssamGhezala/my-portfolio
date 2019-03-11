@@ -9,7 +9,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "nodemailer": "^5.1.1"
+    "nodemailer": "^5.1.1",
+    "react-responsive-decorator": "0.0.1"
   },
   "devDependencies": {
     "concurrently": "^4.1.0"
