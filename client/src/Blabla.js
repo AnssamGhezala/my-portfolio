@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Project from "./Project";
 class Blabla extends Component {
   state = {
     response: "",

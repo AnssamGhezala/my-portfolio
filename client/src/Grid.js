@@ -102,10 +102,3 @@ class Grid extends Component {
 }
 
 export default Grid;
-// if ("Intro".equals(this.props.section)) {
-//   return <Intro />;
-// } else if ("About".equals(this.props.section)) {
-//   return <About />;
-// } else if ("Projects".equals(this.props.section)) {
-//   return <Projects />;
-// }
