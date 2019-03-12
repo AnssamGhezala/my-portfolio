@@ -6,7 +6,8 @@ class Blabla extends Component {
     name: "",
     email: "",
     message: "",
-    responseToPost: ""
+    responseToPost: "",
+    clicked: false
   ***REMOVED***
   componentDidMount() {
     this.callApi()
@@ -47,8 +48,8 @@ class Blabla extends Component {
           <div className="form-group">
             <input
               type="text"
-              pattern=".{1,}"
-              title="At least one character"
+              pattern="([A-z0-9À-ž\s]){2,}"
+              title="At least two characters"
               className="form-control"
               value={this.state.name}
               onChange={e =>
@@ -58,6 +59,7 @@ class Blabla extends Component {
               }
               placeholder="Name"
               id="contact-name"
+              required
             />
             <label
               className="input-field-icon icon-user"
@@ -79,6 +81,7 @@ class Blabla extends Component {
               }
               placeholder="Email"
               id="contact-email"
+              required
             />
             <label
               className="input-field-icon icon-email"
@@ -98,6 +101,7 @@ class Blabla extends Component {
               placeholder="Message... How was your experience going through my portfolio? Do you have any suggestions to improve it?"
               id="contact-message"
               rows="1"
+              required
             />
           </div>
 
@@ -105,6 +109,7 @@ class Blabla extends Component {
             id="contact-send"
             type="submit"
             className="btn btn-primary btn-lg btn-block"
+            onClick={() => this.setState({ clicked: true })}
           >
             Send
           </button>
