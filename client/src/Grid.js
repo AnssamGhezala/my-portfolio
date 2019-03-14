@@ -10,7 +10,7 @@ class Grid extends Component {
 
   render() {
     return (
-      <div>
+      <div className="Grid">
         {"Intro" === this.props.section ? (
           <Intro />
         ) : "About" === this.props.section ? (
