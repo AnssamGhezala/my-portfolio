@@ -21,6 +21,14 @@ class Blabla extends Component {
     return body;
   ***REMOVED***
   handleSubmit = async e => {
+    this.setState({
+      response: "",
+      name: "",
+      email: "",
+      message: "",
+      responseToPost: "",
+      clicked: false
+    });
     e.preventDefault();
     console.log(this.state.post);
     const response = await fetch("/api/world", {
