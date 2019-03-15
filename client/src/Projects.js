@@ -32,6 +32,7 @@ class Projects extends Component {
           <div className="ProjectDescription">
             {" "}
             Java Restoration app using MVC model
+            <a className="privateProject"> Project currently private :( </a>
           </div>{" "}
         </div>
         <div className="project" onClick={() => this.handleClick("Portfolio")}>
