@@ -8,7 +8,7 @@
   font-size: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 400px) {
   .App {
     /* overflow: visible ; */
     height: 100vh !important;
@@ -71,7 +71,7 @@
     width: 95% !important;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .App {
     /* overflow: visible ; */
     height: 100vh !important;
@@ -97,9 +97,10 @@
     width: 98% !important;
   }
   .about {
-    font-size: 180% !important;
+    font-size: 150% !important;
     width: 300px !important;
     margin: 0 auto !important;
+    text-align: center;
   }
   .Projects {
     width: 100% !important;
@@ -116,11 +117,12 @@
     font-size: 5vw !important;
   }
   .ProjectDescription {
-    font-size: 130% !important;
-    margin-top: 2vh !important;
+    font-size: 110% !important;
+    /* margin-top: 2vh !important; */
   }
   .Intro {
     font-size: 100%;
+    text-align: center;
   }
 
   img {
@@ -341,6 +343,9 @@ img {
   position: relative;
   border-radius: 5px;
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 .title {
   display: inline-block;
@@ -353,7 +358,7 @@ img {
 
 /* mouse over link */
 .project:hover {
-  display: block;
+  /* display: block; */
   cursor: pointer;
   font-weight: 300;
   border-color: green;
