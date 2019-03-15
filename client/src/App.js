@@ -4,11 +4,11 @@ import Item from "./Item";
 import Grid from "./Grid";
 
 class App extends Component {
-  state = { hoverType: "" ***REMOVED***
+  state = { hoverType: "" };
 
   handleHover = name => {
     this.setState({ hoverType: name });
-  ***REMOVED***
+  };
   render() {
     return (
       <div className="App">

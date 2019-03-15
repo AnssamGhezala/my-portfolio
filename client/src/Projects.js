@@ -16,7 +16,7 @@ class Projects extends Component {
     } else if (thing === "Portfolio") {
       window.open("https://github.com/AnssamGhezala/my-portfolio");
     }
-  ***REMOVED***
+  };
   render() {
     return (
       <div className="Projects">

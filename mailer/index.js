@@ -18,13 +18,13 @@ const send = ({ email, name, text }) => {
     subject: `New message from ${from} at my-portfolio`,
     text: text,
     replyTo: from
-  ***REMOVED***
+  };
 
   return new Promise((resolve, reject) => {
     transporter.sendMail(message, (error, info) =>
       error ? reject(error) : resolve(info)
     );
   });
-***REMOVED***
+};
 
 module.exports = send;

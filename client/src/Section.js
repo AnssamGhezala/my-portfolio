@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 class Section extends Component {
-  state = { title: this.props.type ***REMOVED***
+  state = { title: this.props.type };
 
   render() {
     return (

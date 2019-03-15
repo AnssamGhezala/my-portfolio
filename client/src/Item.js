@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import "./App.css";
 
 class Item extends Component {
-  state = { type: this.props.type, class: this.props.class, hover: false ***REMOVED***
+  state = { type: this.props.type, class: this.props.class, hover: false };
 
   handleHover = () => {
     this.setState({ hover: true });
-  ***REMOVED***
+  };
 
   render() {
     return (

@@ -1,13 +1,13 @@
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+const user = "SOMEUSER";
+const refreshToken = "SOMEREFRESHTOKEN";
+const accessToken = "SOMEACCESSTOKEN";
+const clientId = "SOMECLIENTID";
+const clientSecret = "SOMESECRET";
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+module.exports = {
+  user,
+  clientId,
+  clientSecret,
+  refreshToken,
+  accessToken
+};

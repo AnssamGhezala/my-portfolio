@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Project from "./Project";
 class Blabla extends Component {
   state = {
     response: "",
@@ -8,7 +7,7 @@ class Blabla extends Component {
     message: "",
     responseToPost: "",
     clicked: false
-  ***REMOVED***
+  };
   componentDidMount() {
     this.callApi()
       .then(res => this.setState({ response: res.express }))
@@ -19,7 +18,7 @@ class Blabla extends Component {
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
-  ***REMOVED***
+  };
   handleSubmit = async e => {
     this.setState({
       response: "",
@@ -30,7 +29,7 @@ class Blabla extends Component {
       clicked: false
     });
     e.preventDefault();
-    console.log(this.state.post);
+    // console.log(this.state.post);
     const response = await fetch("/api/world", {
       method: "POST",
       headers: {
@@ -44,9 +43,9 @@ class Blabla extends Component {
     });
     const body = await response.text();
     this.setState({ responseToPost: body });
-  ***REMOVED***
+  };
 
-  handleGmail = async e => {***REMOVED***
+  handleGmail = async e => {};
   render() {
     return (
       <div className="contactForm">

@@ -310,6 +310,11 @@ img {
   align-items: center;
 }
 
+.privateProject {
+color: #e65c67;
+font-size: 70% !important;
+}
+
 .about {
   line-height: 2.5em;
   font-family: Helvetica, Arial, sans-serif;

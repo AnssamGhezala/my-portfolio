@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import Blabla from "./Blabla";
 
 class Grid extends Component {
-  //state = { type: this.props.type, class: this.props.class ***REMOVED***
+  //state = { type: this.props.type, class: this.props.class };
 
   render() {
     return (
