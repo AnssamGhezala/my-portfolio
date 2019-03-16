@@ -9,6 +9,7 @@ class App extends Component {
   handleHover = name => {
     this.setState({ hoverType: name });
   };
+
   render() {
     return (
       <div className="App">

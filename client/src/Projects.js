@@ -10,7 +10,7 @@ class Projects extends Component {
     } else if (thing === "Search") {
       window.open("https://github.com/AnssamGhezala/searchBar");
     } else if (thing === "Resto") {
-      window.open("https://github.com/W2018-ECSE223/Group01");
+      //  window.open("https://github.com/W2018-ECSE223/Group01");
     } else if (thing === "Robot") {
       window.open("https://github.com/AnssamGhezala/RoboElectronics");
     } else if (thing === "Portfolio") {
